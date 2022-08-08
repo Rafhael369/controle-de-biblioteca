@@ -9,7 +9,7 @@ public class Conexao {
         String bd = "biblioteca";
     	String url = "jdbc:mysql://127.0.0.1/"+bd;
         String usuario = "root";
-        String senha = "45879631bB!";
+        String senha = "coloca sua senha";
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         conexao = DriverManager.getConnection(url, usuario, senha);
