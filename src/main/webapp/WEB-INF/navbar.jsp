@@ -46,10 +46,12 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
               	<% 
-					if (type.equals("adm")){
-						out.println("<li><a href='inserir_usuario?action=inserir' class='nav-link' style='color: white;'><b>CADASTRAR USUARIO</b></a></li>"); 
-					}
-				%>
+			if (type != null){
+				if (type.equals("adm")){
+					out.println("<li><a href='inserir_usuario?action=inserir' class='nav-link' style='color: white;'><b>CADASTRAR USUARIO</b></a></li>"); 
+				}
+			}
+		%>
                 <li><a href="logout" class="nav-link" style="color: white;"><b>SAIR</b></a></li>
               </ul>
             </nav>
